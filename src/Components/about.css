@@ -1,0 +1,149 @@
+/* MAIN ABOUT SECTION */
+.about-section {
+  padding: 60px 80px;
+  /*background: #0b0b0b;*/
+  color: #eaeaea;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* HEADING */
+.about-title {
+  width: 100%;
+  font-size: 26px; 
+  font-weight: 600; 
+  margin: 0px auto;
+  margin-bottom: 6px; 
+}
+
+.about-line {
+  width: 100%;
+  height: 2px;
+  background: #bba5ff; /* same as education/projects line */
+  margin-bottom: 22px;
+}
+
+/* SUMMARY PARAGRAPH */
+.about-summary {
+  max-width: 100%;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+/* SKILLS SECTION */
+.skills-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.skills-line {
+  width: 100%;
+  height: 2px;
+  background: #bba5ff; /* subtle separator line */
+  margin-bottom: 22px;
+}
+
+/* GRID LAYOUT FOR SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+/* EACH SKILL ITEM */
+.skill-item { 
+  background: #1f1b1b; /* subtle card look */
+  border: 1px solid #1d1d1d;
+  border-radius: 10px;
+  padding: 18px 12px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  border-color: #3dd545;
+}
+
+/* ICONS */
+.skill-item img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.skill-item img[alt="github"] {
+  filter: invert(1);
+}
+
+/* TEXT BELOW ICON */
+.skill-item span {
+  display: block;
+  font-size: 14px;
+  color: #e4e4e4;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* CONTACT SECTION */
+.contact-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.contact-line {
+  width: 100%;
+  height: 2px;
+  background: #bba5ff;
+  margin-bottom: 18px;
+}
+
+.contact-info {
+  font-size: 16px;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+
+.contact-info strong {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.contact-info a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #6c63ff;
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 650px) {
+  .about-section {
+    padding: 28px 28px;
+  }
+  .about-title{
+    text-align: center;
+  }
+  .about-summary {
+    font-size: 16px;
+  }
+
+  .skills-grid {
+    gap: 18px;
+  }
+  .skills-title{
+    text-align: center;
+  }
+}

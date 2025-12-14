@@ -1,0 +1,121 @@
+/* BIG outer card */
+.projects-section {
+  padding: 60px 80px;
+  color: #eaeaea;
+  min-height: 100vh;
+}
+
+.projects-title{
+  width: 85%;
+  font-size: 26px; 
+  font-weight: 600; 
+  margin: 0px auto;
+  margin-bottom: 6px; 
+}
+
+.projects-line { 
+  width: 85%; 
+  height: 2px; 
+  background: #bba5ff; 
+  margin: 0px auto;
+  margin-bottom: 28px; 
+}
+
+.projects-big-card {
+  width: 85%;
+  margin: 0px auto;
+  background: #121212;
+  border: 2px solid rgba(187,165,255,0.12);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+/* Small project cards */
+.project-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px 22px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(187, 165, 255, 0.15);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.proj-title{
+  margin: 0px;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(187, 165, 255, 0.15);
+}
+
+/* Header row inside small card */
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.proj-github{
+  color: #6c63ff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.proj-github:hover {
+  color: #4a3cff;
+  text-decoration: underline;
+}
+
+/* Period styling */
+.proj-period {
+  font-size: 13px;
+  color: #bba5ff;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px){
+  .projects-section{
+    padding: 40px 28px;
+  }
+}
+
+@media (max-width: 650px) {
+  .projects-section { 
+    padding: 28px 18px; 
+  }
+
+  .projects-title{
+    text-align: center;
+  }
+  
+  .proj-title{
+    margin: 0px 0px 10px 0px;
+  }
+  .projects-big-card {
+    width: 100%;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .project-card-header {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .proj-period {
+    text-align: left;
+  }
+
+  ul{
+    padding-left: 28px;
+  }
+}
+

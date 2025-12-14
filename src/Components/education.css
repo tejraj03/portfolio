@@ -1,0 +1,148 @@
+/* SECTION */
+.edu-section {
+  padding: 60px 80px;
+  color: #eaeaea;
+  min-height: 100vh;
+}
+
+/* Title + line */
+.edu-title { 
+  width: 85%;
+  font-size: 26px; 
+  font-weight: 600; 
+  margin: 0px auto;
+  margin-bottom: 6px; 
+}
+.edu-line { 
+  width: 85%; 
+  height: 2px; 
+  background: #bba5ff; 
+  margin: 0px auto;
+  margin-bottom: 28px; 
+}
+
+/* BIG card that contains the small cards */
+.edu-card-wrapper {
+  width: 85%;
+  /*max-width: 980px;          /* limit row width */
+  margin: 0px auto;
+  background: #121212;
+  border: 2px solid rgba(187,165,255,0.12);
+  padding: 18px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+/* SMALL CARD */
+.edu-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 18px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.03);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Left side (details) */
+.edu-card-left {
+  width: 65%;
+}
+
+.edu-school {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.edu-school.small { font-size: 16px; font-weight: 700; }
+/*.edu-school.invisible { display: none; } /* used to avoid repeating school name if needed */
+
+.edu-degree {
+  color: #cfcfcf;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Right side (meta) */
+.edu-card-right {
+  width: 35%;
+  text-align: right;
+  font-size: 14px;
+}
+
+.edu-duration { 
+  font-size: 13px;
+  color: #bba5ff;
+  font-weight: 600;
+  white-space: nowrap;
+  margin: 0px;
+}
+
+.edu-extra { margin: 4px 0 0 0; color: #cfcfcf; font-size: 13px; }
+
+/* Small helper: keep times/numbers on a single line on desktop */
+.edu-card-right p { white-space: nowrap; }
+
+/* Hover subtle lift (optional) */
+.edu-card:hover {
+  transform: translateY(-4px);
+  transition: transform 150ms ease;
+  box-shadow: 0 10px 25px rgba(187, 165, 255, 0.15);
+}
+
+/* ----------------
+   RESPONSIVE
+   ---------------- */
+
+@media (max-width: 900px) {
+  .edu-section { padding: 40px 28px; }
+  .edu-card-wrapper { max-width: 760px; padding: 14px; gap: 10px; }
+  .edu-card { padding: 14px; gap: 14px; }
+  .edu-card-left { width: 60%; }
+  .edu-card-right { width: 40%; text-align: right; }
+  .edu-school { font-size: 17px; }
+}
+
+@media (max-width: 600px) {
+  .edu-section { padding: 28px 28px; }
+  .edu-title { text-align: center; }
+  .edu-card-wrapper { 
+    width: 100%; 
+    padding: 12px; 
+    gap: 10px; 
+    border-radius: 12px; 
+  }
+
+  /* Stack each small card content vertically */
+  .edu-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .edu-card-left { width: 100%; }
+  .edu-card-right {
+    width: 100%;
+    text-align: left;
+    display: block;
+    white-space: normal; /* allow wrapping */
+    margin-top: 6px;     /* space between detail and meta */
+  }
+
+  .edu-card-right p { margin: 0; }
+  .edu-school.invisible { display: block; font-size: 15px; color: #e6e6e6; } /* show name on mobile if needed */
+
+  .edu-degree { font-size: 14px; }
+  .edu-duration { font-weight: 700; font-size: 14px; }
+  .edu-extra { font-size: 13px; }
+}
+

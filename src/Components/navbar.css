@@ -1,0 +1,129 @@
+/* OUTER NAV: full width so page/section background shows on sides */
+.navbar {
+  width: 100%;
+  background: transparent; /* let the page/section background show */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* centers the inner pill */
+}
+
+/* INNER PILL: the centered 70% rounded navbar */
+.nav-inner {
+  width: 70%;                 /* desktop width of the pill */
+  background-color: #181818;
+  border: 1px solid #bba5ff;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  color: #e8e8e8;
+  font-family: Inter, sans-serif;
+  border-radius: 50px;
+  gap: 16px;
+}
+
+/* LEFT SIDE MENU */
+.nav-left ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-left ul li a {
+  color: #d5d5d5;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.15s ease;
+  white-space: nowrap; /* prevent internal link wrapping */
+}
+
+.nav-left ul li a:hover {
+  color: #ffffff;
+}
+
+/* RIGHT SIDE ICONS */
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-shrink: 0; /* don't let icons shrink below visible size */
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  display: block;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.icon-github .icon {
+  filter: invert(1);
+}
+
+.nav-right a:hover .icon {
+  transform: translateY(-6px);
+  opacity: 0.9;
+}
+
+/* ----------------
+   RESPONSIVE: MOBILE
+   ---------------- */
+@media (max-width: 900px) {
+  .nav-inner { 
+    width: 70%; 
+  }
+  .nav-left ul { 
+    gap: 16px; 
+  }
+  .nav-left ul li a { 
+    font-size: 1.05rem; 
+  }
+  .icon { width: 20px; height: 20px; }
+}
+
+/* Mobile phones: stack and avoid overflow */
+@media (max-width: 600px) {
+  .nav-inner {
+    min-width: 280px;
+    max-width: 320px;
+    padding: 10px 14px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* let links wrap and center them */
+  .nav-left ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-left ul li a {
+    font-size: 0.95rem;
+  }
+
+  /* place icons on their own row and center */
+  .nav-right {
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .icon { width: 20px; height: 20px; }
+
+  /* if you want to hide text labels on super small screens, uncomment:
+  .nav-left ul li a {
+    display: none;
+  }
+  .nav-left ul li { width: auto; }
+  */
+}
+
+/* Optional: make all elements respect box sizing */
+* { box-sizing: border-box; }
