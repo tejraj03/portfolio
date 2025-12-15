@@ -5,7 +5,7 @@ import Education from './Components/Education.js';
 import Projects from './Components/Projects.js';
 import About from './Components/About.js';
 import Footer from './Components/Footer.js';
-import './app.css';
+import './App.css';
 
 function App() {
   return (
