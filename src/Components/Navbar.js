@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import LinkedinIcon from '../assets/linkedin.svg';
+import LinkedinIcon from '../assets/linkedin.png';
 import GithubIcon from '../assets/github.svg';
 import './navbar.css';
 
