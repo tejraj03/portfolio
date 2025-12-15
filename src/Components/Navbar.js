@@ -20,15 +20,17 @@ export default function Navbar(){
                         href = "https://www.linkedin.com/in/tejraj-p-9077332b1"
                         className='icon-linkedin'
                         target='_blank'
+                        rel="noreferrer"
                     >
-                        <img src={LinkedinIcon} className='icon' />
+                        <img src={LinkedinIcon} alt="linkedin logo" className='icon' />
                     </a>
                     <a 
                         href = "https://github.com/tejraj03"
                         className='icon-github'
                         target='_blank'
+                        rel="noreferrer"
                     >
-                        <img src={GithubIcon} className='icon' />
+                        <img src={GithubIcon} alt="GitHub logo" className='icon' />
                     </a>
                 </div>
             </div>
