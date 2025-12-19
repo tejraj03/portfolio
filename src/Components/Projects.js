@@ -2,6 +2,18 @@ import './projects.css';
 
 const projects = [
   {
+    title: "Lost & Found Portal",
+    github: "https://github.com/tejraj03/lost-and-found-portal",
+    tech: "React, Spring Boot, Spring Data JPA, MySQL, REST APIs",
+    period: "Dec 2025",
+    bullets: [
+      "Built a full-stack Lost & Found web application that allows users to upload found items, search for items, and mark items as collected.",
+      "Developed RESTful backend APIs using Spring Boot and Spring Data JPA to handle item management and database operations.",
+      "Integrated a React frontend with the Spring Boot backend using HTTP requests to enable seamless client–server communication.",
+      "Designed and connected a MySQL database for persistent storage of item details, ensuring reliable data handling."
+    ]
+  },
+  {
     title: "University Course Enrollment System",
     github: "https://github.com/tejraj03/uces",
     tech: "HTML, CSS, JavaScript, MySQL",
