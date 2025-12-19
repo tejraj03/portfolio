@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# 💼 Tejraj's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A personal portfolio website built using **React** to showcase my skills, projects, education, and experience as a web developer.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 About the Project
 
-### `npm start`
+This portfolio is designed to present my profile in a clean and professional way.  
+It highlights who I am, what I do, the technologies I work with, and the projects I have built.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The UI follows a **minimal dark theme**, focusing on clarity, readability, and simplicity.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:** HTML, CSS, JavaScript, React  
+- **Backend & Database:** Java, MySQL  
+- **Version Control:** Git, GitHub  
+- **Routing:** React Router DOM  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📌 Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Responsive and clean UI design  
+- Smooth navigation using React Router  
+- Dedicated sections for:
+  - Home
+  - About (Summary + Skills + Contact)
+  - Education
+  - Projects
+- Reusable components (Navbar, Footer, Sections)
+- Modern dark theme styling  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📂 Folder Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+src/
+├── Components/
+│ ├── Navbar.js
+│ ├── Footer.js
+│ └── ...
+├── pages/
+│ ├── Home.js
+│ ├── About.js
+│ ├── Education.js
+│ ├── Projects.js
+│ └── ...
+├── assets/
+│ ├── html.png
+│ ├── css.png
+│ ├── js.png
+│ ├── react.png
+│ └── ...
+├── App.js
+├── index.js
+└── app.css
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧠 Learning Outcome
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Through this project, I improved my understanding of:
+- React component structure
+- Routing using React Router
+- Reusable UI components
+- Clean folder organization
+- Writing maintainable CSS
 
-## Learn More
+# To run this project locally:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📫 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you'd like to connect or discuss opportunities, feel free to reach out:
 
-### Analyzing the Bundle Size
+- **Email:** tejrajp0177@gmail.com  
+- **GitHub:** https://github.com/tejraj03  
+- **LinkedIn:** https://www.linkedin.com/in/tejraj-p-9077332b1  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+✨ Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Designed & Developed by Tejraj • Built with React
