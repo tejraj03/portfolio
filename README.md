@@ -38,6 +38,7 @@ The UI follows a **minimal dark theme**, focusing on clarity, readability, and s
 
 ## 📂 Folder Structure
 
+```
 src/
 ├── Components/
 │ ├── Navbar.js
@@ -58,7 +59,7 @@ src/
 ├── App.js
 ├── index.js
 └── app.css
-
+```
 ---
 
 ## 🧠 Learning Outcome
