@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: "University Course Enrollment System",
-    github: "https://github.com/tejraj03/uces",
+    github: "https://github.com/tejraj03/university-course-enrollment-system",
     tech: "HTML, CSS, JavaScript, MySQL",
     period: "Feb 2025 - Apr 2025",
     bullets: [
